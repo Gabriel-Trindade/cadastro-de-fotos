@@ -25,11 +25,16 @@ Certifique-se de ter o seguinte instalado em seu sistema:
     composer install
     ```
 
+ - O composer irá perguntar se deve setar as permissões de pasta, digite:
+    ```bash
+       Y
+    ```
+
 3. **Configure o banco de dados:**
 
 - Primeiramente crie o banco de dados que o cakephp irá receber os dados (recomendo o nome photo_gallery ou relacionados).
 
-- Vá até a pasta config e procure por app_local, no array de 'DataSources', configure o host, username, password e o database em que você irá fazer a migração do banco de dados.
+- Vá até a pasta config e procure por app_local.php, no array de 'DataSources', configure o host, username, password e o database em que você irá fazer a migração do banco de dados.
 
 -   Após isso, vá até o console e rode:
 

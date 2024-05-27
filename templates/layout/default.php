@@ -29,7 +29,7 @@ $cakeDescription = 'Galeria de fotos!';
     </title>
     <?= $this->Html->meta('icon') ?>
 
-    <?= $this->Html->css(['normalize.min', 'milligram.min', 'cake']) ?>
+    <?= $this->Html->css(['normalize.min', 'milligram.min', 'cake',]) ?>
     <?= $this->Html->css(['index']) ?>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
@@ -114,6 +114,14 @@ $cakeDescription = 'Galeria de fotos!';
     <style>
         body {
             font-family: 'Roboto', sans-serif;
+        }
+
+        .success {
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+            padding: 10px;
+            margin-top: 15px;
         }
     </style>
 

@@ -64,12 +64,9 @@ class Application extends BaseApplication
      */
     public function middleware(MiddlewareQueue $middlewareQueue): MiddlewareQueue
     {
-        $csrf = new CsrfProtectionMiddleware([
-            'httponly' => true,
-        ]);
+
     
         $middlewareQueue
-            ->add($csrf)
             // ... outros middlewares
             ->add(new ErrorHandlerMiddleware())
             ->add(new AssetMiddleware())
