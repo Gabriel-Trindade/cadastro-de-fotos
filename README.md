@@ -26,7 +26,7 @@ Certifique-se de ter o seguinte instalado em seu sistema:
     ```
 
  - O composer irá perguntar se deve setar as permissões de pasta, digite:
- 
+
     ```bash
        Y
     ```
@@ -43,7 +43,7 @@ Certifique-se de ter o seguinte instalado em seu sistema:
     bin/cake migrations migrate
     ```
 
-4. **Inicie o servidor de desenvolvimento (caso esteja utilizando xampp, pode pular esse passo)**
+4. **Inicie o servidor de desenvolvimento (NÃO UTILIZE XAMPP)**
 
     ```bash
     bin/cake server
