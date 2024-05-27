@@ -70,7 +70,7 @@ class PhotosController extends AppController
     public function add()
     {
         // Criar uma nova entidade de foto
-        
+
         $photo = $this->Photos->newEmptyEntity();
 
         if ($this->request->is('post')) {

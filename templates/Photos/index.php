@@ -1,8 +1,7 @@
-
 <h1 class="my-4">Galeria de Fotos</h1>
 
 <div class="mb-2">
-<?= $this->Html->link('Adicionar foto', ['action' => 'add'], ['class' => 'btn btn-primary btn-lg mb-4']) ?>
+    <?= $this->Html->link('Adicionar foto', ['action' => 'add'], ['class' => 'btn btn-primary btn-lg mb-4']) ?>
 </div>
 
 <div class="btn-group filter-button-group mb-4" role="group" aria-label="Filtrar">
