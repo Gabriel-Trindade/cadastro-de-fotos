@@ -6,7 +6,7 @@ Este é um projeto em CakePHP que realiza o cadastro de fotos, incluindo sua vis
 
 Certifique-se de ter o seguinte instalado em seu sistema:
 
--   [PHP](https://www.php.net) (versão 8.2.4 ou superior)
+-   [PHP](https://www.php.net) 
 -   [Composer](https://getcomposer.org/download/)
 -   [MySQL](https://dev.mysql.com/downloads/installer/)
 
