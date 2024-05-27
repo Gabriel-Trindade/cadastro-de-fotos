@@ -1,53 +1,54 @@
-# CakePHP Application Skeleton
+# Meu Projeto CakePHP
 
-![Build Status](https://github.com/cakephp/app/actions/workflows/ci.yml/badge.svg?branch=master)
-[![Total Downloads](https://img.shields.io/packagist/dt/cakephp/app.svg?style=flat-square)](https://packagist.org/packages/cakephp/app)
-[![PHPStan](https://img.shields.io/badge/PHPStan-level%207-brightgreen.svg?style=flat-square)](https://github.com/phpstan/phpstan)
+Este é um projeto em CakePHP que realiza o cadastro de fotos, incluindo sua visualização, edição e exclusão.
 
-A skeleton for creating applications with [CakePHP](https://cakephp.org) 5.x.
+## Pré-requisitos
 
-The framework source code can be found here: [cakephp/cakephp](https://github.com/cakephp/cakephp).
+Certifique-se de ter o seguinte instalado em seu sistema:
 
-## Installation
+-   [PHP](https://www.php.net) (versão 8.2.4 ou superior)
+-   [Composer](https://getcomposer.org/download/)
+-   [MySQL](https://dev.mysql.com/downloads/installer/)
 
-1. Download [Composer](https://getcomposer.org/doc/00-intro.md) or update `composer self-update`.
-2. Run `php composer.phar create-project --prefer-dist cakephp/app [app_name]`.
+## Passos para Inicializar o Projeto
 
-If Composer is installed globally, run
+1. **Clone o Repositório:**
 
-```bash
-composer create-project --prefer-dist cakephp/app
-```
+    ```bash
+    git clone https://github.com/Gabriel-Trindade/cadastro-de-fotos
+    cd cadastro-de-fotos
+    ```
 
-In case you want to use a custom app dir name (e.g. `/myapp/`):
+2. **Instale as dependências:**
 
-```bash
-composer create-project --prefer-dist cakephp/app myapp
-```
+    ```bash
+    composer install
+    ```
 
-You can now either use your machine's webserver to view the default home page, or start
-up the built-in webserver with:
+3. **Configure o banco de dados:**
 
-```bash
-bin/cake server -p 8765
-```
+- Primeiramente crie o banco de dados que o cakephp irá receber os dados (recomendo o nome photo_gallery ou relacionados).
 
-Then visit `http://localhost:8765` to see the welcome page.
+- Vá até a pasta config e procure por app_local, no array de 'DataSources', configure o host, username, password e o database em que você irá fazer a migração do banco de dados.
 
-## Update
+-   Após isso, vá até o console e rode:
 
-Since this skeleton is a starting point for your application and various files
-would have been modified as per your needs, there isn't a way to provide
-automated upgrades, so you have to do any updates manually.
+    ```bash
+    bin/cake migrations migrate
+    ```
 
-## Configuration
+4. **Inicie o servidor de desenvolvimento (caso esteja utilizando xampp, pode pular esse passo)**
 
-Read and edit the environment specific `config/app_local.php` and set up the
-`'Datasources'` and any other configuration relevant for your application.
-Other environment agnostic settings can be changed in `config/app.php`.
+    ```bash
+    bin/cake server
+    ```
 
-## Layout
+5. **Acesse o projeto:**
 
-The app skeleton uses [Milligram](https://milligram.io/) (v1.3) minimalist CSS
-framework by default. You can, however, replace it with any other library or
-custom styles.
+-   Abra o navegador e acesse http://localhost:8765.
+
+## Notas Adicionais
+
+ - Caso tenha problemas com as migrações, verifique se o usuário do MySQL tem permissões para criar e alterar bancos de dados.
+ - Para mais informações sobre o CakePHP e como desenvolver com ele, consulte a [documentação oficial](https://book.cakephp.org/4/en/).
+ - O código se baseia no controller de PhotosController em que faz todos os principais componentes funcionarem, utilizei para estilizar bootstrap, jquery e isotope para o grid de fotos.
